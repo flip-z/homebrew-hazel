@@ -5,20 +5,20 @@
 class HazelCli < Formula
   desc "Filesystem-first project work queue with a lightweight web UI."
   homepage "https://github.com/flip-z/hazel"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flip-z/hazel/releases/download/v0.1.2/hazel_0.1.2_darwin_amd64.tar.gz"
-      sha256 "a8e2de918ee0f47cd2dd1dcfd639954de6ad3c6048f8c8015c724c2716d65e2d"
+      url "https://github.com/flip-z/hazel/releases/download/v0.1.3/hazel_0.1.3_darwin_amd64.tar.gz"
+      sha256 "82731b3b2abf76b245b904774b123c0ec4ac895deae106a9430cfff0e029e0c1"
 
       def install
         bin.install "hazel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/flip-z/hazel/releases/download/v0.1.2/hazel_0.1.2_darwin_arm64.tar.gz"
-      sha256 "34d6acce83df757ca19b53a14c77710bbda4576a17cd0177063d9182dd4b8e69"
+      url "https://github.com/flip-z/hazel/releases/download/v0.1.3/hazel_0.1.3_darwin_arm64.tar.gz"
+      sha256 "4ce063dd52311005427bd5b54cb421817f1086097baa2a25552d83e42005007f"
 
       def install
         bin.install "hazel"
@@ -28,15 +28,15 @@ class HazelCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flip-z/hazel/releases/download/v0.1.2/hazel_0.1.2_linux_amd64.tar.gz"
-      sha256 "fa677b81b2f3b01f4a357ebc56f87f33f2efa26d52e33454e177bca0b1da2d5d"
+      url "https://github.com/flip-z/hazel/releases/download/v0.1.3/hazel_0.1.3_linux_amd64.tar.gz"
+      sha256 "64ff7b2d6bb1d28ef2c77808615a2c2d3cbb54717b61ae906ef8189f60d0465f"
       def install
         bin.install "hazel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flip-z/hazel/releases/download/v0.1.2/hazel_0.1.2_linux_arm64.tar.gz"
-      sha256 "c6df64152cbe0daec5ca810207c69c5c781a3c12bb2dc999fd0b2a053ca751c7"
+      url "https://github.com/flip-z/hazel/releases/download/v0.1.3/hazel_0.1.3_linux_arm64.tar.gz"
+      sha256 "6b02c6de36eb4079e94a90c7fc5abed5d0dfdce3c1c277730cc90c6a70ff9129"
       def install
         bin.install "hazel"
       end
